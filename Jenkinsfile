@@ -23,7 +23,7 @@ spec:
     stage('Run maven') {
       steps {
         container('maven') {
-          sh 'mvn -version'
+          sh 'mvn clean package'
         }
       }
     }
